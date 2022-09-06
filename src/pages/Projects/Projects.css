@@ -1,0 +1,5 @@
+.screenshot {
+    width: 350px;
+    height: 30vh;
+    object-fit: cover;
+}

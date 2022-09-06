@@ -1,0 +1,18 @@
+.arrow_button {
+    position: absolute;
+    top: 30px;
+    left: 32px;
+    border: none;
+    background: none;
+    padding: 10px 12px;
+    opacity: 0.5;
+    transition: 1s;
+    border-radius: 70%;
+    border: 0.5px solid var(--color_dark_grey);
+}
+
+.arrow_button:hover {
+    cursor: pointer;
+    color: var(--color_light_grey);
+    background-color: var(--color_dark_grey);
+}
