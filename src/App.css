@@ -12,11 +12,12 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.1em;
+    /* font-size: 1.1em; */
     font-weight: 300;
     background-color: var(--color_light_grey);
+    color: var(--color_dark_grey);
     text-align: center;
-    line-height: 2.5;
+    /* line-height: 2.5; */
 }
 
 #index-background {
@@ -34,7 +35,11 @@ body {
     align-items: center;
 }
 
-#grid {
+#description h1 {
+    font-weight: 400;
+}
+
+#nav {
     display: flex;
     flex-wrap: wrap;
     font-size: 2em;
@@ -43,14 +48,19 @@ body {
 
 .link_style {
     text-decoration: none;
+    transition: 1s;
 }
 
 .link_style:hover {
     text-decoration: underline;
-    transition: 1s;
+    color: black;
 }
 
-#item_grid_1 {
+.link_style:visited {
+    color: var(--color_dark_grey);
+}
+
+#item_nav_1 {
     position: absolute;
     top: 0;
     left: 0;
@@ -58,9 +68,10 @@ body {
     width: 49%;
     text-align: left;
     margin-left: 1%;
+    margin-top: 1%;
 }
 
-#item_grid_2 {
+#item_nav_2 {
     position: absolute;
     top: 0;
     right: 0;
@@ -68,9 +79,10 @@ body {
     width: 49%;
     text-align: right;
     margin-right: 1%;
+    margin-top: 1%;
 }
 
-#item_grid_3 {
+#item_nav_3 {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -78,9 +90,10 @@ body {
     width: 99%;
     text-align: right;
     margin-right: 1%;
+    margin-bottom: 1%;
 }
 
 .pic {
     width: 200px;
-    margin: 20px 0;
+    margin: 10px 0;
 }

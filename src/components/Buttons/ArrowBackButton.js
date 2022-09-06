@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { ARROW_BACK_ICON } from '../../data/constants';
 
 
-export default function ArrowBack() {
+export default function ArrowBackButton() {
     const navigate = useNavigate();
     return (
         <div>

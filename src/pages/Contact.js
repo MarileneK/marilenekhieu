@@ -1,11 +1,12 @@
 import React from 'react';
+import ArrowBackButton from '../components/Buttons/ArrowBackButton';
 import { EMAIL, INSTAGRAM, LINKEDIN, LINKEDIN_ICON } from '../data/constants';
 
 export default function Contact() {
   return (
-    <React.Fragment>
+    <div>
 
-      <p>[Button BACK]</p>
+      <ArrowBackButton />
       <p>Hey! Let's keep in touch!</p>
 
       <a
@@ -30,6 +31,6 @@ export default function Contact() {
         Instagram: marileneK (add link)
       </a>
 
-    </React.Fragment>
+    </div>
   )
 }

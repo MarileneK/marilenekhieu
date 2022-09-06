@@ -1,0 +1,20 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+export default function Description() {
+    return (
+        <div id='description'>
+            <h1>Hey, I am <Link to='/contact' className='link_style'>Marilène K.</Link></h1>
+            <Link to='/about'>
+                <img
+                    className='pic'
+                    src={require('../assets/img/marilene-picture-b&w.png')}
+                    alt="Oh ho... Something went wrong =( ..."
+                    title="It's me! Marilène Khieu."
+                />
+            </Link>
+
+            <p>Life is short, so... enjoy!</p>
+        </div>
+    )
+};

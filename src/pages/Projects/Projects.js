@@ -15,43 +15,44 @@ export default function Projects() {
 
             <p style={{ fontSize: '50px', color: 'red' }}>ALL | WEB | MOBILE (ajouter un hover + selected)</p>
 
-            {projects.map((project) => (
-                <React.Fragment key={project.id}>
-                    <h1>{project.title}</h1>
-                    <img
-                        // src={require(`../../assets/img/${project.image}`)}
-                        src={require(`../../assets/img/${project.image}`)}
-                        alt='Screenshot of the project'
-                        className='screenshot'
-                    />
-                    <p>{project.description}</p>
+            <div id='project_container'>
+                {projects.map((project) => (
+                    <div key={project.id} className='project_card'>
+                        <img
+                            src={require(`../../assets/img/${project.image}`)}
+                            alt='Screenshot of the project'
+                            className='screenshot'
+                        />
+                        <h1>{project.title}</h1>
+                        <p>{project.description}</p>
 
-                    <p>
-                        {project.link && (
-                            <>
+                        <p>
+                            {project.link && (
+                                <>
+                                    <a
+                                        href={project.link}
+                                        target='_blank'
+                                        rel="noreferrer"
+                                    >
+                                        Site
+                                    </a>
+                                    {' | '}
+                                </>
+                            )}
+                            {project.github && (
                                 <a
-                                    href={project.link}
+                                    href={project.github}
                                     target='_blank'
                                     rel="noreferrer"
                                 >
-                                    Site
+                                    GitHub
                                 </a>
-                                {' | '}
-                            </>
-                        )}
-                        {project.github && (
-                            <a
-                                href={project.github}
-                                target='_blank'
-                                rel="noreferrer"
-                            >
-                                GitHub
-                            </a>
-                        )}
-                    </p>
+                            )}
+                        </p>
 
-                </React.Fragment>
-            ))}
+                    </div>
+                ))}
+            </div>
 
         </div>
     )
