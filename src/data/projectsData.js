@@ -1,13 +1,13 @@
-import { ALL, BOOTSTRAP, CSS, HTML, JAVASCRIPT, MOBILE, PHP, REACT, REACT_NATIVE, WEB } from "./constants";
+import { BOOTSTRAP, CSS, HTML, JAVASCRIPT, MOBILE, PHP, REACT, REACT_NATIVE, WEB } from "./constants";
 
-export const projects = [
+const ProjectsData = [
     {
         id: 1,
         image: 'spa-gestion-screenshot.png',
         title: 'SPA - gestion',
         description: 'Frontend web application | React',
         technos: [CSS, HTML, JAVASCRIPT, REACT],
-        category: [ALL, WEB],
+        category: WEB,
         github: 'https://github.com/MarileneK/spa-react',
         link: 'https://spa-gestion.herokuapp.com',
     },
@@ -17,7 +17,7 @@ export const projects = [
         title: 'My ToDoList',
         description: 'Frontend web application | JavaScript',
         technos: [CSS, HTML, JAVASCRIPT],
-        category: [ALL, WEB],
+        category: WEB,
         github: 'https://github.com/MarileneK/todolist.github.io',
         link: 'https://marilenek.github.io/todolist.github.io',
     },
@@ -25,9 +25,9 @@ export const projects = [
         id: 3,
         image: 'team-m-screenshot.jpeg',
         title: 'Team M',
-        description: 'Frontend web application',
+        description: 'Frontend web application | HTML - CSS',
         technos: [CSS, HTML],
-        category: [ALL, WEB],
+        category: WEB,
         github: 'https://github.com/MarileneK/team-m-challenge',
         link: 'https://marilenek.github.io/team-m-challenge',
     },
@@ -37,7 +37,7 @@ export const projects = [
         title: 'Le Bon Appart',
         description: 'Web application with backend | PHP',
         technos: [BOOTSTRAP, HTML, PHP],
-        category: [ALL, WEB],
+        category: WEB,
         github: 'https://github.com/MarileneK/le-bon-appart-php',
         link: 'http://marilene-khieu.infinityfreeapp.com',
     },
@@ -47,8 +47,10 @@ export const projects = [
         title: 'FRISBEE',
         description: 'Mobile application | React Native',
         technos: [CSS, HTML, REACT_NATIVE],
-        category: [ALL, MOBILE],
+        category: MOBILE,
         github: '',
         link: '',
     },
 ];
+
+export default ProjectsData;

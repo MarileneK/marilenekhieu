@@ -1,56 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Projects.css';
-
 import '../../components/Buttons/Buttons.css';
-import { projects } from '../../data/projectsData';
-import ArrowBackButton from '../../components/Buttons/ArrowBackButton';
 
+import ArrowBackButton from '../../components/Buttons/ArrowBackButton';
+import ProjectCard from './ProjectCard';
+
+import ProjectsData from '../../data/ProjectsData';
+import { ALL, MOBILE, WEB } from '../../data/constants';
 
 export default function Projects() {
-    const technos = projects.map((project) => project.technos);
+    const [projects, setProjects] = useState(ProjectsData);
+    // const technos = projects.map((project) => project.technos);
+    // console.log(technos);
+
+    const handleClick = (currentCat) => {
+        setProjects(ProjectsData);
+        const singleProject = ProjectsData.map((project) => project);
+        const result = singleProject.filter((cat) => cat.category === currentCat);
+        setProjects(result);
+    };
 
     return (
-        <div>
+        <div className='page_container'>
             <ArrowBackButton />
 
-            <p style={{ fontSize: '50px', color: 'red' }}>ALL | WEB | MOBILE (ajouter un hover + selected)</p>
+            <div className='main_title categories_style'>
+                <span onClick={() => setProjects(ProjectsData)}>{ALL}</span>|
+                <span onClick={() => handleClick(WEB)}>{WEB}</span>|
+                <span onClick={() => handleClick(MOBILE)}>{MOBILE}</span>
+            </div>
 
             <div id='project_container'>
                 {projects.map((project) => (
-                    <div key={project.id} className='project_card'>
-                        <img
-                            src={require(`../../assets/img/${project.image}`)}
-                            alt='Screenshot of the project'
-                            className='screenshot'
-                        />
-                        <h1>{project.title}</h1>
-                        <p>{project.description}</p>
-
-                        <p>
-                            {project.link && (
-                                <>
-                                    <a
-                                        href={project.link}
-                                        target='_blank'
-                                        rel="noreferrer"
-                                    >
-                                        Site
-                                    </a>
-                                    {' | '}
-                                </>
-                            )}
-                            {project.github && (
-                                <a
-                                    href={project.github}
-                                    target='_blank'
-                                    rel="noreferrer"
-                                >
-                                    GitHub
-                                </a>
-                            )}
-                        </p>
-
-                    </div>
+                    <ProjectCard
+                        key={project.id}
+                        project={project}
+                    />
                 ))}
             </div>
 

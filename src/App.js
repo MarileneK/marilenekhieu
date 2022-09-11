@@ -5,9 +5,10 @@ import Navigation from './components/Navigation';
 
 function App() {
     return (
-        <div id='index-background'>
+        <div id='app-background'>
             <Navigation />
             <Description />
+            <p>Life is short, so... enjoy!</p>
         </div>
     );
 }

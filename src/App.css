@@ -12,15 +12,65 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    /* font-size: 1.1em; */
     font-weight: 300;
     background-color: var(--color_light_grey);
     color: var(--color_dark_grey);
     text-align: center;
-    /* line-height: 2.5; */
 }
 
-#index-background {
+/* COMMON TO ALL PAGES */
+.page_container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.page_container_narrow {
+    width: 30%;
+    height: 90vh;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color_dark_grey);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    text-decoration: none;
+    color: var(--color_dark_grey);
+}
+
+.main_title {
+    margin-top: 50px;
+}
+
+.main_title span:hover {
+    cursor: pointer;
+}
+
+.main_title span:first-child{
+    padding-right: 20px;
+}
+
+.main_title span:nth-child(2) {
+    padding: 0 20px;
+}
+
+.main_title span:last-child{
+    padding-left: 20px;
+}
+
+
+/* App.js */
+#app-background {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,17 +78,8 @@ body {
     height: 100vh;
 }
 
-#description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
-#description h1 {
-    font-weight: 400;
-}
-
+/* Navigation.js */
 #nav {
     display: flex;
     flex-wrap: wrap;
@@ -60,12 +101,20 @@ body {
     color: var(--color_dark_grey);
 }
 
+
+/* Description.js */
+#description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #item_nav_1 {
     position: absolute;
     top: 0;
     left: 0;
-    /* background-color: yellow; */
-    width: 49%;
+    width: 30%;
     text-align: left;
     margin-left: 1%;
     margin-top: 1%;
@@ -75,8 +124,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    /* background-color: red; */
-    width: 49%;
+    width: 30%;
     text-align: right;
     margin-right: 1%;
     margin-top: 1%;
@@ -86,7 +134,6 @@ body {
     position: absolute;
     bottom: 0;
     right: 0;
-    /* background-color: green; */
     width: 99%;
     text-align: right;
     margin-right: 1%;
@@ -96,4 +143,29 @@ body {
 .pic {
     width: 200px;
     margin: 10px 0;
+}
+
+/* About.js */
+.about_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+/* Contact.js */
+.contact_style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.network {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    line-height: 2;
 }

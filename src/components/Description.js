@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function Description() {
     return (
         <div id='description'>
-            <h1>Hey, I am <Link to='/contact' className='link_style'>Marilène K.</Link></h1>
+            <h1>Hey, I am <Link to='/contact' className='link_style'>Marilène Khieu.</Link></h1>
             <Link to='/about'>
                 <img
                     className='pic'
@@ -13,8 +13,6 @@ export default function Description() {
                     title="It's me! Marilène Khieu."
                 />
             </Link>
-
-            <p>Life is short, so... enjoy!</p>
         </div>
     )
 };

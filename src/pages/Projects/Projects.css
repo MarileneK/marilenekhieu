@@ -1,20 +1,48 @@
+/* Projects.js  */
 #project_container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
+.categories_style {
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+/* ProjectCard.js */
 .project_card {
-    width: 50%;
-    margin-bottom: 100px;
+    line-height: 0.5;
+    border: 1px  dashed var(--color_purple);
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
 }
 
 .project_card h1 {
-    font-size: 1.5em;
+    font-size: 1.2em;
+    padding-top: 10px;
+}
+
+.project_links {
+    text-decoration: underline;
+}
+
+.project_card a:hover {
+    text-decoration: underline;
 }
 
 .screenshot {
-    width: 40vw;
-    height: 50vh;
+    width: 400px;
+    height: 30vh;
     object-fit: cover;
+    margin-bottom: 10px;
+    position: relative;
+    transition: 3s;
 }
 
+.screenshot:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
