@@ -11,21 +11,21 @@ export default function Contact() {
 
       <div className='network'>
         <a
-          href={`mailto:${EMAIL}`}
+          href={`mailto:${process.env.EMAIL}`}
           target='_blank'
           rel='noreferrer'
         >
-          {EMAIL}
+          {process.env.EMAIL}
         </a>
         <a
-          href={`${LINKEDIN}`}
+          href={`${process.env.LINKEDIN}`}
           target='_blank'
           rel='noreferrer'
         >
           <i className={LINKEDIN_ICON}>{' '}</i>
         </a>
         <a
-          href={`${INSTAGRAM}`}
+          href={`${process.env.INSTAGRAM}`}
           target='_blank'
           rel='noreferrer'
         >

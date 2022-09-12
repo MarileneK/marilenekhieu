@@ -15,3 +15,18 @@
     color: var(--color_light_grey);
     background-color: var(--color_dark_grey);
 }
+
+.arrow_button:active {
+    color: var(--color_light_grey);
+}
+
+/* ____________________________________________________ */
+/* MEDIA QUERIES */
+@media screen and (max-width: 767px) {
+    .arrow_button {
+        padding: 5px 7px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}

@@ -1,8 +1,3 @@
-// PERSONAL DATA
-export const EMAIL = 'khieu.marilene@gmail.com';
-export const INSTAGRAM = 'https://www.instagram.com/marilene.k';
-export const LINKEDIN = 'https://www.linkedin.com/in/marilenekhieu';
-
 // CATEGORIES
 export const ALL = 'ALL';
 export const MOBILE = 'MOBILE';
