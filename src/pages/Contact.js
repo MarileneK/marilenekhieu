@@ -1,6 +1,6 @@
 import React from 'react';
 import ArrowBackButton from '../components/Buttons/ArrowBackButton';
-import { EMAIL, INSTAGRAM, INSTAGRAM_ICON, LINKEDIN, LINKEDIN_ICON } from '../data/constants';
+import { EMAIL_ICON, LINKEDIN_ICON } from '../data/constants';
 
 export default function Contact() {
   return (
@@ -11,25 +11,18 @@ export default function Contact() {
 
       <div className='network'>
         <a
-          href={`mailto:${process.env.EMAIL}`}
+          href='mailto:khieu.marilene@gmail.com'
           target='_blank'
           rel='noreferrer'
         >
-          {process.env.EMAIL}
+          <i className={EMAIL_ICON}/>
         </a>
         <a
-          href={`${process.env.LINKEDIN}`}
+          href='https://www.linkedin.com/in/marilenekhieu'
           target='_blank'
           rel='noreferrer'
         >
-          <i className={LINKEDIN_ICON}>{' '}</i>
-        </a>
-        <a
-          href={`${process.env.INSTAGRAM}`}
-          target='_blank'
-          rel='noreferrer'
-        >
-          <i className={INSTAGRAM_ICON}></i>
+          <i className={LINKEDIN_ICON}/>
         </a>
       </div>
 

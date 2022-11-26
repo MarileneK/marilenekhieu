@@ -1,4 +1,4 @@
-export const values = ['Empathy', 'Team work', 'Respect', 'Transparency', 'Humility'];
+export const values = ['Empathy', 'Team player', 'Respect', 'Tolerance', 'Humility'];
 
 export const activities = [
     'Enjoying the nature',

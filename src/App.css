@@ -85,21 +85,9 @@ a:visited {
     flex-wrap: wrap;
     font-size: 2em;
     font-weight: 400;
+    transition: 2s;
 }
 
-.link_style {
-    text-decoration: none;
-    transition: 1s;
-}
-
-.link_style:hover {
-    text-decoration: underline;
-    color: black;
-}
-
-.link_style:visited {
-    color: var(--color_dark_grey);
-}
 
 
 /* Description.js */
@@ -168,6 +156,14 @@ a:visited {
     justify-content: center;
     align-items: flex-end;
     line-height: 2;
+}
+
+.network > a {
+    transition: 1s;
+}
+
+.network > a:hover {
+    color: var(--color_green);
 }
 
 

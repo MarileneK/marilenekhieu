@@ -1,29 +1,44 @@
 import React from 'react';
 
 export default function ProjectCard({ project }) {
+
+  const { description, github, image, link, title } = project;
+
   return (
     <div className='project_card'>
-      <a
-        href={project.link}
-        target='_blank'
-        rel="noreferrer"
-      >
-        <img
-          src={require(`../../assets/img/${project.image}`)}
-          alt='Screenshot of the project'
-          className='screenshot'
-        />
-        <h1>{project.title.toUpperCase()}</h1>
-      </a>
+      {link ? (
+        <a
+          href={link}
+          target='_blank'
+          rel="noreferrer"
+        >
+          <img
+            src={require(`../../assets/img/${image}`)}
+            alt='Screenshot of the project'
+            className='screenshot'
+          />
+          <h1>{title.toUpperCase()}</h1>
+        </a>
+      ) : (
+        <>
+          <img
+            src={require(`../../assets/img/${image}`)}
+            alt='Screenshot of the project'
+            className='screenshot'
+          />
+          <h1>{title.toUpperCase()}</h1>
+        </>
+      )}
 
-      <p>{project.description}</p>
 
-      <p >
-        {project.link && (
+      <p>{description}</p>
+
+      <p>
+        {link ? (
           <>
             <span className="project_links">
               <a
-                href={project.link}
+                href={link}
                 target='_blank'
                 rel="noreferrer"
               >
@@ -32,11 +47,12 @@ export default function ProjectCard({ project }) {
             </span>
             {' | '}
           </>
-        )}
-        {project.github && (
+        ) : ""
+        }
+        {github && (
           <span className="project_links">
             <a
-              href={project.github}
+              href={github}
               target='_blank'
               rel="noreferrer"
             >

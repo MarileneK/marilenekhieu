@@ -8,7 +8,7 @@ function App() {
         <div id='app-background'>
             <Navigation />
             <Description />
-            <p>Life is short, so... enjoy!</p>
+            <p>I am a junior Frontend Developer.</p>
         </div>
     );
 }
