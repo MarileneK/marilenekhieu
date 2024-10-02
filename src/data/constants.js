@@ -7,14 +7,18 @@ export const WEB = 'WEB';
 export const BOOTSTRAP = 'BOOTSTRAP';
 export const CSS = 'CSS';
 export const JAVASCRIPT = 'JAVASCRIPT';
+export const TYPESCRIPT = 'TYPESCRIPT';
 export const JAVA = 'JAVA';
 export const HTML = 'HTML';
 export const MONGO_DB = 'MONGO_DB';
 export const NODE = 'NODE';
+export const EXPRESS = 'EXPRESS';
+export const SEQUELIZE = 'SEQUELIZE';
 export const PHP = 'PHP';
 export const LARAVEL = 'LARAVEL';
 export const REACT = 'REACT';
 export const REACT_NATIVE = 'REACT_NATIVE';
+export const STYLED_COMPONENTS = 'STYLED_COMPONENTS';
 
 // ICONS
 export const ARROW_UP_ICON = 'fas fa-arrow-up';
