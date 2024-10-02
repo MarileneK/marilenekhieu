@@ -1,21 +1,24 @@
 {
   "files": {
     "main.css": "/marilenekhieu/static/css/main.05a9a3fe.css",
-    "main.js": "/marilenekhieu/static/js/main.6ea093eb.js",
+    "main.js": "/marilenekhieu/static/js/main.21f14937.js",
     "static/media/marilene-picture-color.png": "/marilenekhieu/static/media/marilene-picture-color.967cab547d12db4146bb.png",
-    "static/media/klunkerkranisch-2017-rounded.png": "/marilenekhieu/static/media/klunkerkranisch-2017-rounded.6ef64ca7603cb49c44f3.png",
-    "static/media/frisbee-screenshot.png": "/marilenekhieu/static/media/frisbee-screenshot.50bdda86f9aa72dbf562.png",
     "static/media/marilene-picture-b&w.png": "/marilenekhieu/static/media/marilene-picture-b&w.3923096981f2abd8c54e.png",
-    "static/media/le-bon-appart-screenshot.png": "/marilenekhieu/static/media/le-bon-appart-screenshot.652d28bb03c8afab4ccd.png",
-    "static/media/spa-gestion-screenshot.png": "/marilenekhieu/static/media/spa-gestion-screenshot.f0237cb00123638f576f.png",
-    "static/media/mytodolistapp-screenshot.png": "/marilenekhieu/static/media/mytodolistapp-screenshot.f2fb10cf56c5b15973ef.png",
-    "static/media/team-m-screenshot.jpeg": "/marilenekhieu/static/media/team-m-screenshot.241e94e125d39d5effd6.jpeg",
+    "static/media/le-bon-appart-screenshot.webp": "/marilenekhieu/static/media/le-bon-appart-screenshot.31b72a16efd710286326.webp",
+    "static/media/marilene-picture-color.webp": "/marilenekhieu/static/media/marilene-picture-color.843263918ac416fd22e3.webp",
+    "static/media/frisbee-screenshot.webp": "/marilenekhieu/static/media/frisbee-screenshot.59bead27c9cb15116ffd.webp",
+    "static/media/marilene-picture-b&w.webp": "/marilenekhieu/static/media/marilene-picture-b&w.477d4bc5137410ad6880.webp",
+    "static/media/team-m-screenshot.webp": "/marilenekhieu/static/media/team-m-screenshot.cda2f7195d4606cba4b2.webp",
+    "static/media/spa-gestion-screenshot.webp": "/marilenekhieu/static/media/spa-gestion-screenshot.738598200ba6605253bd.webp",
+    "static/media/code-ton-asso-screenshot.webp": "/marilenekhieu/static/media/code-ton-asso-screenshot.84a48c2fe4cf8e9a1b82.webp",
+    "static/media/mytodolistapp-screenshot.webp": "/marilenekhieu/static/media/mytodolistapp-screenshot.a1d4696a0471ce9bbe74.webp",
+    "static/media/yahtzee-game-screenshot.webp": "/marilenekhieu/static/media/yahtzee-game-screenshot.c9df1954b2d5191e8261.webp",
     "index.html": "/marilenekhieu/index.html",
     "main.05a9a3fe.css.map": "/marilenekhieu/static/css/main.05a9a3fe.css.map",
-    "main.6ea093eb.js.map": "/marilenekhieu/static/js/main.6ea093eb.js.map"
+    "main.21f14937.js.map": "/marilenekhieu/static/js/main.21f14937.js.map"
   },
   "entrypoints": [
     "static/css/main.05a9a3fe.css",
-    "static/js/main.6ea093eb.js"
+    "static/js/main.21f14937.js"
   ]
 }
